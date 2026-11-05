@@ -1,0 +1,38 @@
+
+# Environment configuration
+python-dotenv
+
+# LangChain and LangGraph
+langchain>=1.0,<2
+langchain-core>=1.0,<2
+langchain-community
+langchain-text-splitters
+langgraph>=0.2
+
+# Gemini LLM
+langchain-google-genai
+
+# Evaluation LLM
+langchain-openai
+openevals
+
+# Embeddings and vector database
+langchain-qdrant
+qdrant-client
+fastembed
+
+# Document processing
+pypdf
+python-docx
+python-pptx
+
+# API requests and data processing
+requests
+numpy
+pydantic
+
+# Streamlit application
+streamlit>=1.51,<2
+
+# LangSmith tracing
+langsmith

@@ -1,0 +1,142 @@
+{
+    "schema_version": 2,
+    "evaluation_timestamp": "2026-11-05T10:48:33.077318+00:00",
+    "evaluation_type": "end_to_end_answer_generation",
+    "question_limit": 3,
+    "total_dataset_questions": 30,
+    "evaluated_questions": 3,
+    "question_ids": [
+        1,
+        2,
+        3
+    ],
+    "clean_collection": [
+        {
+            "id": 1,
+            "category": "direct",
+            "query": "How many casual leave days can an employee take each year?",
+            "is_in_scope": true,
+            "ground_truth": "Employees may take up to 6 days of casual leave per calendar year for personal matters. Requests should ideally be submitted at least 1 working day in advance, although same-day requests are accepted for genuine emergencies.",
+            "expected_sources": [
+                "leave_policy.txt"
+            ],
+            "collection": "hr_policies",
+            "thread_id": "answer-eval-hr_policies-q1",
+            "answer": "Employees may take up to **6 days** of casual leave per calendar year for personal matters such as family emergencies or personal errands. \n\n*(Source: leave_policy.txt)*",
+            "actual_citations": [
+                "leave_policy.txt"
+            ],
+            "citation_precision": 1.0,
+            "citation_recall": 1.0,
+            "citation_match": true,
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": 2,
+            "category": "direct",
+            "query": "How many public holidays does the company observe annually?",
+            "is_in_scope": true,
+            "ground_truth": "The company observes 12 public holidays per calendar year, along with 2 additional floating holidays.",
+            "expected_sources": [
+                "holidays_policy.txt"
+            ],
+            "collection": "hr_policies",
+            "thread_id": "answer-eval-hr_policies-q2",
+            "answer": "The company observes **12 public holidays** per calendar year. Additionally, employees receive **2 floating holidays** per year [Source: `holidays_policy.txt`].",
+            "actual_citations": [
+                "holidays_policy.txt"
+            ],
+            "citation_precision": 1.0,
+            "citation_recall": 1.0,
+            "citation_match": true,
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": 3,
+            "category": "direct",
+            "query": "What is the standard notice period after confirmation?",
+            "is_in_scope": true,
+            "ground_truth": "The standard notice period after confirmation is 60 days or 2 calendar months. Employees at Director level and above must serve 90 days.",
+            "expected_sources": [
+                "notice_period_policy.txt"
+            ],
+            "collection": "hr_policies",
+            "thread_id": "answer-eval-hr_policies-q3",
+            "answer": null,
+            "actual_citations": [],
+            "citation_precision": null,
+            "citation_recall": null,
+            "citation_match": null,
+            "status": "error",
+            "error": "Guardrail provider unavailable during input check: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        }
+    ],
+    "noisy_collection": [
+        {
+            "id": 1,
+            "category": "direct",
+            "query": "How many casual leave days can an employee take each year?",
+            "is_in_scope": true,
+            "ground_truth": "Employees may take up to 6 days of casual leave per calendar year for personal matters. Requests should ideally be submitted at least 1 working day in advance, although same-day requests are accepted for genuine emergencies.",
+            "expected_sources": [
+                "leave_policy.txt"
+            ],
+            "collection": "hr_policies_noisy_demo",
+            "thread_id": "answer-eval-hr_policies_noisy_demo-q1",
+            "answer": "Employees may take up to 6 days of casual leave per calendar year for personal matters such as family emergencies or personal errands. \n\n**Source:**\n* `leave_policy.txt`",
+            "actual_citations": [
+                "leave_policy.txt"
+            ],
+            "citation_precision": 1.0,
+            "citation_recall": 1.0,
+            "citation_match": true,
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": 2,
+            "category": "direct",
+            "query": "How many public holidays does the company observe annually?",
+            "is_in_scope": true,
+            "ground_truth": "The company observes 12 public holidays per calendar year, along with 2 additional floating holidays.",
+            "expected_sources": [
+                "holidays_policy.txt"
+            ],
+            "collection": "hr_policies_noisy_demo",
+            "thread_id": "answer-eval-hr_policies_noisy_demo-q2",
+            "answer": "The company observes **12 public holidays** per calendar year. \n\nAdditional details regarding public holidays include:\n* **Publication:** The specific list of holidays is published on the HR portal by December 1st of the preceding year and is based on the national and regional holidays for the employee's registered work location.\n* **Floating Holidays:** In addition to the 12 fixed public holidays, employees also receive 2 floating holidays per year.\n* **Weekend Holidays:** If a public holiday falls on a weekend, it is generally not shifted to the nearest working day unless explicitly announced by HR for that year.\n\n**Source:** `holidays_policy.txt`",
+            "actual_citations": [
+                "holidays_policy.txt"
+            ],
+            "citation_precision": 1.0,
+            "citation_recall": 1.0,
+            "citation_match": true,
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": 3,
+            "category": "direct",
+            "query": "What is the standard notice period after confirmation?",
+            "is_in_scope": true,
+            "ground_truth": "The standard notice period after confirmation is 60 days or 2 calendar months. Employees at Director level and above must serve 90 days.",
+            "expected_sources": [
+                "notice_period_policy.txt"
+            ],
+            "collection": "hr_policies_noisy_demo",
+            "thread_id": "answer-eval-hr_policies_noisy_demo-q3",
+            "answer": "Once an employee has been confirmed after probation, the standard notice period is **60 days (2 calendar months)** for both resignation by the employee and termination initiated by the company, except in cases of termination for cause [Source: notice_period_policy.txt]. \n\n*(Note: Employees at the Director level and above are subject to a 90-day notice period) [Source: notice_period_policy.txt].*",
+            "actual_citations": [
+                "notice_period_policy.txt"
+            ],
+            "citation_precision": 1.0,
+            "citation_recall": 1.0,
+            "citation_match": true,
+            "status": "success",
+            "error": null
+        }
+    ],
+    "last_saved_at": "2026-11-05T10:52:55.172140+00:00"
+}

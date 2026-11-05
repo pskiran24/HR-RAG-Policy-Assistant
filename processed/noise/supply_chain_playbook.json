@@ -1,0 +1,7 @@
+{
+  "source": "supply_chain_playbook.docx",
+  "policy_category": "Operations",
+  "text": "Category: Operations\nSupply Chain & Vendor Management Playbook\nAll new vendor relationships require a signed master service agreement and a 30-day onboarding review before the vendor is added to the approved supplier list. Purchase orders against unapproved vendors will be rejected by procurement.\nInventory is reviewed weekly across all distribution centers, with safety stock thresholds recalculated monthly based on rolling demand forecasts. Any vendor delivery delay exceeding 5 business days must be escalated to the operations duty manager and logged in the incident tracker.\nThis playbook governs supply chain and vendor operations. It does not cover employee notice periods or exit procedures — those are HR matters.",
+  "local_path": "D:\\Applications\\RAG\\HR RAG\\HR+RAG+RESOURCES\\3 - DEPLOYMENT SRC\\data\\noise\\supply_chain_playbook.docx",
+  "file_type": ".docx"
+}

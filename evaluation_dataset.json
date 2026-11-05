@@ -1,0 +1,243 @@
+
+[
+  {
+    "id": 1,
+    "category": "direct",
+    "query": "How many casual leave days can an employee take each year?",
+    "is_in_scope": true,
+    "relevant_sources": ["leave_policy.txt"],
+    "ground_truth": "Employees may take up to 6 days of casual leave per calendar year for personal matters. Requests should ideally be submitted at least 1 working day in advance, although same-day requests are accepted for genuine emergencies."
+  },
+  {
+    "id": 2,
+    "category": "direct",
+    "query": "How many public holidays does the company observe annually?",
+    "is_in_scope": true,
+    "relevant_sources": ["holidays_policy.txt"],
+    "ground_truth": "The company observes 12 public holidays per calendar year, along with 2 additional floating holidays."
+  },
+  {
+    "id": 3,
+    "category": "direct",
+    "query": "What is the standard notice period after confirmation?",
+    "is_in_scope": true,
+    "relevant_sources": ["notice_period_policy.txt"],
+    "ground_truth": "The standard notice period after confirmation is 60 days or 2 calendar months. Employees at Director level and above must serve 90 days."
+  },
+  {
+    "id": 4,
+    "category": "direct",
+    "query": "How long is the probation period for a new full-time employee?",
+    "is_in_scope": true,
+    "relevant_sources": ["probation_policy.txt"],
+    "ground_truth": "New full-time employees serve a probation period of 3 months or 90 calendar days from their joining date, unless a different duration is specified in their offer letter."
+  },
+  {
+    "id": 5,
+    "category": "direct",
+    "query": "How much paid maternity leave is provided?",
+    "is_in_scope": true,
+    "relevant_sources": ["maternity_paternity_policy.txt"],
+    "ground_truth": "Employees who give birth are entitled to 26 weeks of paid maternity leave. This applies to employees who have completed at least 80 days of service in the 12 months preceding the expected delivery date."
+  },
+  {
+    "id": 6,
+    "category": "direct",
+    "query": "What is the deadline for submitting general reimbursement claims?",
+    "is_in_scope": true,
+    "relevant_sources": ["reimbursement_policy.txt"],
+    "ground_truth": "Reimbursement claims must be submitted through the finance portal within 30 days of the expense being incurred, with original receipts or digital invoices attached."
+  },
+  {
+    "id": 7,
+    "category": "direct",
+    "query": "How many days per week can an eligible employee work from home?",
+    "is_in_scope": true,
+    "relevant_sources": ["work_from_home_policy.txt"],
+    "ground_truth": "Eligible employees may work from home up to 2 days per week as a standing arrangement agreed with their manager. Teams are generally expected to maintain at least 3 in-office collaboration days per week."
+  },
+  {
+    "id": 8,
+    "category": "direct",
+    "query": "What is the deadline for returning company assets after resignation?",
+    "is_in_scope": true,
+    "relevant_sources": ["exit_process_policy.txt"],
+    "ground_truth": "All company-issued assets, including laptops, access cards, mobile devices and physical documents, must be returned to IT or facilities on or before the employee's last working day."
+  },
+  {
+    "id": 9,
+    "category": "direct",
+    "query": "How much paternity leave can an employee take?",
+    "is_in_scope": true,
+    "relevant_sources": ["maternity_paternity_policy.txt"],
+    "ground_truth": "Employees whose partner gives birth are entitled to 2 weeks of paid paternity leave, to be taken within 3 months of the child's birth. It may be split into two blocks with manager approval."
+  },
+  {
+    "id": 10,
+    "category": "direct",
+    "query": "How should an employee report a violation of the code of conduct?",
+    "is_in_scope": true,
+    "relevant_sources": ["code_of_conduct_policy.txt"],
+    "ground_truth": "Employees can report suspected violations confidentially through the HR portal's ethics reporting form or by emailing the dedicated ethics mailbox. Retaliation against good-faith reporters is prohibited."
+  },
+  {
+    "id": 11,
+    "category": "paraphrased",
+    "query": "I need a few days off for personal errands. What is my casual leave entitlement?",
+    "is_in_scope": true,
+    "relevant_sources": ["leave_policy.txt"],
+    "ground_truth": "Employees may take up to 6 days of casual leave per calendar year for personal matters. Requests should ideally be made at least 1 working day in advance, with same-day requests accepted for genuine emergencies."
+  },
+  {
+    "id": 12,
+    "category": "paraphrased",
+    "query": "If I am unwell and miss work for several days, when do I need to provide medical proof?",
+    "is_in_scope": true,
+    "relevant_sources": ["leave_policy.txt"],
+    "ground_truth": "For sick leave of 3 or more consecutive days, a medical certificate must be submitted to HR within 5 working days of returning to work."
+  },
+  {
+    "id": 13,
+    "category": "paraphrased",
+    "query": "Can unused annual leave be transferred into the next calendar year?",
+    "is_in_scope": true,
+    "relevant_sources": ["leave_policy.txt"],
+    "ground_truth": "Unused annual leave may be carried forward up to a maximum of 10 days. Any balance beyond that is forfeited on December 31 unless local law requires otherwise."
+  },
+  {
+    "id": 14,
+    "category": "paraphrased",
+    "query": "I am a senior director. How much advance notice am I expected to give when leaving?",
+    "is_in_scope": true,
+    "relevant_sources": ["notice_period_policy.txt"],
+    "ground_truth": "Employees at Director level and above are required to serve a notice period of 90 days."
+  },
+  {
+    "id": 15,
+    "category": "paraphrased",
+    "query": "Can someone who has just joined the company request remote working?",
+    "is_in_scope": true,
+    "relevant_sources": ["probation_policy.txt", "work_from_home_policy.txt"],
+    "ground_truth": "Employees generally become eligible for work-from-home arrangements only after completing probation, subject to role eligibility and manager approval. Employees on probation are not eligible except with special manager approval."
+  },
+  {
+    "id": 16,
+    "category": "paraphrased",
+    "query": "What happens if I spend money on a professional certification related to my job?",
+    "is_in_scope": true,
+    "relevant_sources": ["reimbursement_policy.txt"],
+    "ground_truth": "Employees may claim up to 25,000 in local currency per calendar year for job-relevant certifications or courses. Prior manager approval is required before enrollment, and reimbursement is processed after successful completion."
+  },
+  {
+    "id": 17,
+    "category": "paraphrased",
+    "query": "If I am asked to work on a declared holiday, will I receive another day off?",
+    "is_in_scope": true,
+    "relevant_sources": ["holidays_policy.txt"],
+    "ground_truth": "Employees required to work on a declared public holiday due to business needs are entitled to a compensatory day off within 30 days, in addition to any applicable holiday pay required by local law."
+  },
+  {
+    "id": 18,
+    "category": "paraphrased",
+    "query": "What happens to my company system access when I leave?",
+    "is_in_scope": true,
+    "relevant_sources": ["exit_process_policy.txt"],
+    "ground_truth": "IT revokes access to company systems, email and physical premises at 11:59 PM on the employee's last working day, unless a different time is required for security reasons."
+  },
+  {
+    "id": 19,
+    "category": "scenario",
+    "query": "I am on probation and my manager says my performance is inconclusive. Can the company extend my probation, and for how long?",
+    "is_in_scope": true,
+    "relevant_sources": ["probation_policy.txt"],
+    "ground_truth": "If performance is inconclusive rather than clearly unsatisfactory, probation may be extended by up to 2 additional months at the manager's discretion. Written justification must be shared with the employee and HR. Extension does not guarantee confirmation."
+  },
+  {
+    "id": 20,
+    "category": "scenario",
+    "query": "I am planning annual leave, but one of those days is a declared public holiday. Will that day be deducted from my leave balance?",
+    "is_in_scope": true,
+    "relevant_sources": ["leave_policy.txt", "holidays_policy.txt"],
+    "ground_truth": "No. A declared public holiday falling within a period of approved annual leave is not deducted from the employee's annual leave balance. The balance is automatically adjusted."
+  },
+  {
+    "id": 21,
+    "category": "scenario",
+    "query": "I have completed probation and want to work remotely three days every week. Is that allowed under the standard arrangement?",
+    "is_in_scope": true,
+    "relevant_sources": ["work_from_home_policy.txt"],
+    "ground_truth": "The standard standing work-from-home allowance is up to 2 days per week. Teams are expected to maintain in-office collaboration on at least 3 days per week unless the role is designated fully remote in the employment contract."
+  },
+  {
+    "id": 22,
+    "category": "scenario",
+    "query": "I am resigning and have 10 days remaining before my last working day. Can I use my annual leave balance during this period?",
+    "is_in_scope": true,
+    "relevant_sources": ["leave_policy.txt", "notice_period_policy.txt"],
+    "ground_truth": "Annual leave cannot be taken during the final 15 days of the notice period without explicit written approval from both the employee's manager and HR."
+  },
+  {
+    "id": 23,
+    "category": "scenario",
+    "query": "I returned from an approved business trip 12 days ago. Can I still submit my travel taxi and hotel expenses?",
+    "is_in_scope": true,
+    "relevant_sources": ["travel_expense_policy.txt", "reimbursement_policy.txt"],
+    "ground_truth": "Trip-related expenses must be submitted within 15 days of returning from travel. The general reimbursement policy has a 30-day deadline, but the shorter 15-day deadline applies to travel expenses. Receipts are required for reimbursable taxi and ride-share expenses."
+  },
+  {
+    "id": 24,
+    "category": "scenario",
+    "query": "I am on probation and become eligible for maternity leave during this period. Will my probation continue running while I am away?",
+    "is_in_scope": true,
+    "relevant_sources": ["maternity_paternity_policy.txt", "probation_policy.txt"],
+    "ground_truth": "For employees on probation who become eligible for maternity, paternity or adoption leave, the probation period is paused and resumes upon return rather than counting the leave period against them."
+  },
+  {
+    "id": 25,
+    "category": "multi_source",
+    "query": "I am resigning. What are my notice period, handover and exit formalities?",
+    "is_in_scope": true,
+    "relevant_sources": ["notice_period_policy.txt", "exit_process_policy.txt"],
+    "ground_truth": "After confirmation, the standard notice period is 60 days, or 90 days for Director level and above. The employee must prepare a written handover covering ongoing projects, key contacts and access credentials, to be reviewed with the manager no later than 10 days before the last working day. The exit process also includes returning company assets, an exit interview and final settlement within 45 days of the last working day."
+  },
+  {
+    "id": 26,
+    "category": "multi_source",
+    "query": "I am a confirmed employee working remotely. What financial support is available for my home office and monthly internet expenses?",
+    "is_in_scope": true,
+    "relevant_sources": ["work_from_home_policy.txt", "reimbursement_policy.txt"],
+    "ground_truth": "Eligible employees with a work-from-home arrangement may claim a one-time home office setup allowance of up to 15,000 in local currency within their first 3 months of eligibility. Employees with a standing work-from-home arrangement may claim up to 1,500 per month toward internet costs and up to 1,000 per month toward mobile bills, provided they are substantially used for work. Receipts are required for claims."
+  },
+  {
+    "id": 27,
+    "category": "multi_source",
+    "query": "I am travelling internationally for work. What approvals do I need, and what is the deadline for submitting the expenses?",
+    "is_in_scope": true,
+    "relevant_sources": ["travel_expense_policy.txt", "reimbursement_policy.txt"],
+    "ground_truth": "International business travel requires manager approval and department head approval before booking, using the travel request form on the HR portal. Trip-related expenses must be submitted within 15 days of returning from travel. Relevant receipts should be retained for reimbursable expenses."
+  },
+  {
+    "id": 28,
+    "category": "out_of_scope",
+    "query": "What was the company's total Q3 revenue?",
+    "is_in_scope": false,
+    "relevant_sources": [],
+    "ground_truth": "This is a financial reporting question rather than an HR policy question. The HR assistant should not provide an answer from unrelated business documents."
+  },
+  {
+    "id": 29,
+    "category": "out_of_scope",
+    "query": "Which warehouse locations does the company operate, and what inventory is stored there?",
+    "is_in_scope": false,
+    "relevant_sources": [],
+    "ground_truth": "This is an operations and inventory question, not an HR policy question. The HR assistant should politely explain that it handles HR-related questions."
+  },
+  {
+    "id": 30,
+    "category": "out_of_scope",
+    "query": "What is the company's market expansion strategy for the coming year?",
+    "is_in_scope": false,
+    "relevant_sources": [],
+    "ground_truth": "This is a corporate strategy question rather than an HR policy question. The HR assistant should not answer using unrelated strategy documents."
+  }
+]

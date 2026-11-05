@@ -1,0 +1,2006 @@
+[
+  {
+    "collection": "hr_policies",
+    "number_of_questions": 27,
+    "before_reranking": {
+      "recall@5": 0.9814814814814815,
+      "precision@5": 0.2518518518518519,
+      "mrr": 0.9444444444444444,
+      "hit_rate@5": 1
+    },
+    "after_reranking": {
+      "recall@5": 1.0,
+      "precision@5": 0.2592592592592593,
+      "mrr": 0.9814814814814815,
+      "hit_rate@5": 1
+    },
+    "question_details": [
+      {
+        "question_id": 1,
+        "query": "How many casual leave days can an employee take each year?",
+        "relevant_sources": [
+          "leave_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "leave_policy.txt",
+            "holidays_policy.txt",
+            "probation_policy.txt",
+            "notice_period_policy.txt",
+            "maternity_paternity_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "leave_policy.txt",
+            "holidays_policy.txt",
+            "notice_period_policy.txt",
+            "maternity_paternity_policy.txt",
+            "probation_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 2,
+        "query": "How many public holidays does the company observe annually?",
+        "relevant_sources": [
+          "holidays_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "holidays_policy.txt",
+            "leave_policy.txt",
+            "code_of_conduct_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "holidays_policy.txt",
+            "leave_policy.txt",
+            "code_of_conduct_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 3,
+        "query": "What is the standard notice period after confirmation?",
+        "relevant_sources": [
+          "notice_period_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "notice_period_policy.txt",
+            "probation_policy.txt",
+            "leave_policy.txt",
+            "exit_process_policy.txt",
+            "maternity_paternity_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "notice_period_policy.txt",
+            "probation_policy.txt",
+            "leave_policy.txt",
+            "maternity_paternity_policy.txt",
+            "exit_process_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 4,
+        "query": "How long is the probation period for a new full-time employee?",
+        "relevant_sources": [
+          "probation_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "probation_policy.txt",
+            "notice_period_policy.txt",
+            "maternity_paternity_policy.txt",
+            "exit_process_policy.txt",
+            "leave_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "probation_policy.txt",
+            "notice_period_policy.txt",
+            "leave_policy.txt",
+            "maternity_paternity_policy.txt",
+            "exit_process_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 5,
+        "query": "How much paid maternity leave is provided?",
+        "relevant_sources": [
+          "maternity_paternity_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "maternity_paternity_policy.txt",
+            "leave_policy.txt",
+            "exit_process_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "maternity_paternity_policy.txt",
+            "leave_policy.txt",
+            "exit_process_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 6,
+        "query": "What is the deadline for submitting general reimbursement claims?",
+        "relevant_sources": [
+          "reimbursement_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "travel_expense_policy.txt",
+            "reimbursement_policy.txt",
+            "exit_process_policy.txt",
+            "work_from_home_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 0.5,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "travel_expense_policy.txt",
+            "reimbursement_policy.txt",
+            "exit_process_policy.txt",
+            "work_from_home_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 0.5,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 7,
+        "query": "How many days per week can an eligible employee work from home?",
+        "relevant_sources": [
+          "work_from_home_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "work_from_home_policy.txt",
+            "reimbursement_policy.txt",
+            "probation_policy.txt",
+            "exit_process_policy.txt",
+            "leave_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "work_from_home_policy.txt",
+            "leave_policy.txt",
+            "reimbursement_policy.txt",
+            "holidays_policy.txt",
+            "probation_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 8,
+        "query": "What is the deadline for returning company assets after resignation?",
+        "relevant_sources": [
+          "exit_process_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "exit_process_policy.txt",
+            "maternity_paternity_policy.txt",
+            "notice_period_policy.txt",
+            "travel_expense_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "exit_process_policy.txt",
+            "notice_period_policy.txt",
+            "travel_expense_policy.txt",
+            "maternity_paternity_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 9,
+        "query": "How much paternity leave can an employee take?",
+        "relevant_sources": [
+          "maternity_paternity_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "maternity_paternity_policy.txt",
+            "leave_policy.txt",
+            "holidays_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "maternity_paternity_policy.txt",
+            "leave_policy.txt",
+            "holidays_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 10,
+        "query": "How should an employee report a violation of the code of conduct?",
+        "relevant_sources": [
+          "code_of_conduct_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "code_of_conduct_policy.txt",
+            "notice_period_policy.txt",
+            "leave_policy.txt",
+            "work_from_home_policy.txt",
+            "holidays_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "code_of_conduct_policy.txt",
+            "notice_period_policy.txt",
+            "leave_policy.txt",
+            "work_from_home_policy.txt",
+            "exit_process_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 11,
+        "query": "I need a few days off for personal errands. What is my casual leave entitlement?",
+        "relevant_sources": [
+          "leave_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "leave_policy.txt",
+            "holidays_policy.txt",
+            "work_from_home_policy.txt",
+            "probation_policy.txt",
+            "maternity_paternity_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "leave_policy.txt",
+            "work_from_home_policy.txt",
+            "holidays_policy.txt",
+            "probation_policy.txt",
+            "maternity_paternity_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 12,
+        "query": "If I am unwell and miss work for several days, when do I need to provide medical proof?",
+        "relevant_sources": [
+          "leave_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "leave_policy.txt",
+            "holidays_policy.txt",
+            "exit_process_policy.txt",
+            "work_from_home_policy.txt",
+            "code_of_conduct_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "leave_policy.txt",
+            "work_from_home_policy.txt",
+            "exit_process_policy.txt",
+            "holidays_policy.txt",
+            "reimbursement_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 13,
+        "query": "Can unused annual leave be transferred into the next calendar year?",
+        "relevant_sources": [
+          "leave_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "leave_policy.txt",
+            "notice_period_policy.txt",
+            "maternity_paternity_policy.txt",
+            "holidays_policy.txt",
+            "exit_process_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "leave_policy.txt",
+            "exit_process_policy.txt",
+            "notice_period_policy.txt",
+            "holidays_policy.txt",
+            "maternity_paternity_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 14,
+        "query": "I am a senior director. How much advance notice am I expected to give when leaving?",
+        "relevant_sources": [
+          "notice_period_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "maternity_paternity_policy.txt",
+            "notice_period_policy.txt",
+            "leave_policy.txt",
+            "holidays_policy.txt",
+            "exit_process_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 0.5,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "notice_period_policy.txt",
+            "leave_policy.txt",
+            "maternity_paternity_policy.txt",
+            "exit_process_policy.txt",
+            "holidays_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 15,
+        "query": "Can someone who has just joined the company request remote working?",
+        "relevant_sources": [
+          "probation_policy.txt",
+          "work_from_home_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "work_from_home_policy.txt",
+            "code_of_conduct_policy.txt",
+            "exit_process_policy.txt",
+            "reimbursement_policy.txt",
+            "maternity_paternity_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 0.5,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "probation_policy.txt",
+            "work_from_home_policy.txt",
+            "maternity_paternity_policy.txt",
+            "code_of_conduct_policy.txt",
+            "leave_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 16,
+        "query": "What happens if I spend money on a professional certification related to my job?",
+        "relevant_sources": [
+          "reimbursement_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "reimbursement_policy.txt",
+            "code_of_conduct_policy.txt",
+            "maternity_paternity_policy.txt",
+            "travel_expense_policy.txt",
+            "exit_process_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "reimbursement_policy.txt",
+            "travel_expense_policy.txt",
+            "exit_process_policy.txt",
+            "code_of_conduct_policy.txt",
+            "maternity_paternity_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 17,
+        "query": "If I am asked to work on a declared holiday, will I receive another day off?",
+        "relevant_sources": [
+          "holidays_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "holidays_policy.txt",
+            "leave_policy.txt",
+            "work_from_home_policy.txt",
+            "exit_process_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "holidays_policy.txt",
+            "leave_policy.txt",
+            "work_from_home_policy.txt",
+            "exit_process_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 18,
+        "query": "What happens to my company system access when I leave?",
+        "relevant_sources": [
+          "exit_process_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "exit_process_policy.txt",
+            "code_of_conduct_policy.txt",
+            "holidays_policy.txt",
+            "leave_policy.txt",
+            "maternity_paternity_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "exit_process_policy.txt",
+            "code_of_conduct_policy.txt",
+            "notice_period_policy.txt",
+            "leave_policy.txt",
+            "holidays_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 19,
+        "query": "I am on probation and my manager says my performance is inconclusive. Can the company extend my probation, and for how long?",
+        "relevant_sources": [
+          "probation_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "probation_policy.txt",
+            "notice_period_policy.txt",
+            "work_from_home_policy.txt",
+            "maternity_paternity_policy.txt",
+            "leave_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "probation_policy.txt",
+            "notice_period_policy.txt",
+            "maternity_paternity_policy.txt",
+            "work_from_home_policy.txt",
+            "leave_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 20,
+        "query": "I am planning annual leave, but one of those days is a declared public holiday. Will that day be deducted from my leave balance?",
+        "relevant_sources": [
+          "leave_policy.txt",
+          "holidays_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "holidays_policy.txt",
+            "leave_policy.txt",
+            "maternity_paternity_policy.txt",
+            "notice_period_policy.txt",
+            "exit_process_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "holidays_policy.txt",
+            "leave_policy.txt",
+            "maternity_paternity_policy.txt",
+            "notice_period_policy.txt",
+            "exit_process_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 21,
+        "query": "I have completed probation and want to work remotely three days every week. Is that allowed under the standard arrangement?",
+        "relevant_sources": [
+          "work_from_home_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "work_from_home_policy.txt",
+            "probation_policy.txt",
+            "exit_process_policy.txt",
+            "notice_period_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "work_from_home_policy.txt",
+            "probation_policy.txt",
+            "notice_period_policy.txt",
+            "exit_process_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 22,
+        "query": "I am resigning and have 10 days remaining before my last working day. Can I use my annual leave balance during this period?",
+        "relevant_sources": [
+          "leave_policy.txt",
+          "notice_period_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "holidays_policy.txt",
+            "notice_period_policy.txt",
+            "leave_policy.txt",
+            "exit_process_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 0.5,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "leave_policy.txt",
+            "notice_period_policy.txt",
+            "exit_process_policy.txt",
+            "holidays_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 23,
+        "query": "I returned from an approved business trip 12 days ago. Can I still submit my travel taxi and hotel expenses?",
+        "relevant_sources": [
+          "travel_expense_policy.txt",
+          "reimbursement_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "travel_expense_policy.txt",
+            "reimbursement_policy.txt",
+            "exit_process_policy.txt",
+            "leave_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "travel_expense_policy.txt",
+            "reimbursement_policy.txt",
+            "exit_process_policy.txt",
+            "leave_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 24,
+        "query": "I am on probation and become eligible for maternity leave during this period. Will my probation continue running while I am away?",
+        "relevant_sources": [
+          "maternity_paternity_policy.txt",
+          "probation_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "maternity_paternity_policy.txt",
+            "probation_policy.txt",
+            "work_from_home_policy.txt",
+            "leave_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "maternity_paternity_policy.txt",
+            "probation_policy.txt",
+            "work_from_home_policy.txt",
+            "leave_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 25,
+        "query": "I am resigning. What are my notice period, handover and exit formalities?",
+        "relevant_sources": [
+          "notice_period_policy.txt",
+          "exit_process_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "exit_process_policy.txt",
+            "notice_period_policy.txt",
+            "maternity_paternity_policy.txt",
+            "leave_policy.txt",
+            "probation_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "exit_process_policy.txt",
+            "notice_period_policy.txt",
+            "probation_policy.txt",
+            "leave_policy.txt",
+            "maternity_paternity_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 26,
+        "query": "I am a confirmed employee working remotely. What financial support is available for my home office and monthly internet expenses?",
+        "relevant_sources": [
+          "work_from_home_policy.txt",
+          "reimbursement_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "reimbursement_policy.txt",
+            "work_from_home_policy.txt",
+            "holidays_policy.txt",
+            "probation_policy.txt",
+            "code_of_conduct_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "reimbursement_policy.txt",
+            "work_from_home_policy.txt",
+            "probation_policy.txt",
+            "holidays_policy.txt",
+            "code_of_conduct_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 27,
+        "query": "I am travelling internationally for work. What approvals do I need, and what is the deadline for submitting the expenses?",
+        "relevant_sources": [
+          "travel_expense_policy.txt",
+          "reimbursement_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "travel_expense_policy.txt",
+            "leave_policy.txt",
+            "reimbursement_policy.txt",
+            "work_from_home_policy.txt",
+            "probation_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "travel_expense_policy.txt",
+            "reimbursement_policy.txt",
+            "leave_policy.txt",
+            "work_from_home_policy.txt",
+            "probation_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "collection": "hr_policies_noisy_demo",
+    "number_of_questions": 27,
+    "before_reranking": {
+      "recall@5": 0.9814814814814815,
+      "precision@5": 0.2518518518518519,
+      "mrr": 0.9629629629629629,
+      "hit_rate@5": 1
+    },
+    "after_reranking": {
+      "recall@5": 1.0,
+      "precision@5": 0.2592592592592593,
+      "mrr": 0.9814814814814815,
+      "hit_rate@5": 1
+    },
+    "question_details": [
+      {
+        "question_id": 1,
+        "query": "How many casual leave days can an employee take each year?",
+        "relevant_sources": [
+          "leave_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "leave_policy.txt",
+            "holidays_policy.txt",
+            "probation_policy.txt",
+            "notice_period_policy.txt",
+            "maternity_paternity_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "leave_policy.txt",
+            "holidays_policy.txt",
+            "notice_period_policy.txt",
+            "maternity_paternity_policy.txt",
+            "probation_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 2,
+        "query": "How many public holidays does the company observe annually?",
+        "relevant_sources": [
+          "holidays_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "holidays_policy.txt",
+            "leave_policy.txt",
+            "q3_revenue_report.pdf",
+            "code_of_conduct_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "holidays_policy.txt",
+            "leave_policy.txt",
+            "q3_revenue_report.pdf",
+            "code_of_conduct_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 3,
+        "query": "What is the standard notice period after confirmation?",
+        "relevant_sources": [
+          "notice_period_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "notice_period_policy.txt",
+            "probation_policy.txt",
+            "leave_policy.txt",
+            "maternity_paternity_policy.txt",
+            "exit_process_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "notice_period_policy.txt",
+            "probation_policy.txt",
+            "leave_policy.txt",
+            "maternity_paternity_policy.txt",
+            "exit_process_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 4,
+        "query": "How long is the probation period for a new full-time employee?",
+        "relevant_sources": [
+          "probation_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "probation_policy.txt",
+            "notice_period_policy.txt",
+            "maternity_paternity_policy.txt",
+            "exit_process_policy.txt",
+            "leave_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "probation_policy.txt",
+            "notice_period_policy.txt",
+            "leave_policy.txt",
+            "maternity_paternity_policy.txt",
+            "exit_process_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 5,
+        "query": "How much paid maternity leave is provided?",
+        "relevant_sources": [
+          "maternity_paternity_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "maternity_paternity_policy.txt",
+            "leave_policy.txt",
+            "exit_process_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "maternity_paternity_policy.txt",
+            "leave_policy.txt",
+            "exit_process_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 6,
+        "query": "What is the deadline for submitting general reimbursement claims?",
+        "relevant_sources": [
+          "reimbursement_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "reimbursement_policy.txt",
+            "travel_expense_policy.txt",
+            "exit_process_policy.txt",
+            "q3_revenue_report.pdf",
+            "regional_sales_summary.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "travel_expense_policy.txt",
+            "reimbursement_policy.txt",
+            "exit_process_policy.txt",
+            "q3_revenue_report.pdf",
+            "regional_sales_summary.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 0.5,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 7,
+        "query": "How many days per week can an eligible employee work from home?",
+        "relevant_sources": [
+          "work_from_home_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "work_from_home_policy.txt",
+            "reimbursement_policy.txt",
+            "probation_policy.txt",
+            "exit_process_policy.txt",
+            "leave_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "work_from_home_policy.txt",
+            "leave_policy.txt",
+            "reimbursement_policy.txt",
+            "probation_policy.txt",
+            "exit_process_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 8,
+        "query": "What is the deadline for returning company assets after resignation?",
+        "relevant_sources": [
+          "exit_process_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "exit_process_policy.txt",
+            "maternity_paternity_policy.txt",
+            "notice_period_policy.txt",
+            "travel_expense_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "exit_process_policy.txt",
+            "notice_period_policy.txt",
+            "travel_expense_policy.txt",
+            "maternity_paternity_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 9,
+        "query": "How much paternity leave can an employee take?",
+        "relevant_sources": [
+          "maternity_paternity_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "maternity_paternity_policy.txt",
+            "leave_policy.txt",
+            "holidays_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "maternity_paternity_policy.txt",
+            "leave_policy.txt",
+            "holidays_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 10,
+        "query": "How should an employee report a violation of the code of conduct?",
+        "relevant_sources": [
+          "code_of_conduct_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "code_of_conduct_policy.txt",
+            "warehouse_ops_overview.pdf",
+            "notice_period_policy.txt",
+            "leave_policy.txt",
+            "work_from_home_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "code_of_conduct_policy.txt",
+            "notice_period_policy.txt",
+            "warehouse_ops_overview.pdf",
+            "leave_policy.txt",
+            "work_from_home_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 11,
+        "query": "I need a few days off for personal errands. What is my casual leave entitlement?",
+        "relevant_sources": [
+          "leave_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "leave_policy.txt",
+            "holidays_policy.txt",
+            "work_from_home_policy.txt",
+            "probation_policy.txt",
+            "maternity_paternity_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "leave_policy.txt",
+            "work_from_home_policy.txt",
+            "holidays_policy.txt",
+            "probation_policy.txt",
+            "maternity_paternity_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 12,
+        "query": "If I am unwell and miss work for several days, when do I need to provide medical proof?",
+        "relevant_sources": [
+          "leave_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "leave_policy.txt",
+            "holidays_policy.txt",
+            "exit_process_policy.txt",
+            "work_from_home_policy.txt",
+            "code_of_conduct_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "leave_policy.txt",
+            "work_from_home_policy.txt",
+            "exit_process_policy.txt",
+            "holidays_policy.txt",
+            "reimbursement_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 13,
+        "query": "Can unused annual leave be transferred into the next calendar year?",
+        "relevant_sources": [
+          "leave_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "leave_policy.txt",
+            "notice_period_policy.txt",
+            "maternity_paternity_policy.txt",
+            "holidays_policy.txt",
+            "exit_process_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "leave_policy.txt",
+            "exit_process_policy.txt",
+            "notice_period_policy.txt",
+            "holidays_policy.txt",
+            "maternity_paternity_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 14,
+        "query": "I am a senior director. How much advance notice am I expected to give when leaving?",
+        "relevant_sources": [
+          "notice_period_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "maternity_paternity_policy.txt",
+            "notice_period_policy.txt",
+            "leave_policy.txt",
+            "holidays_policy.txt",
+            "exit_process_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 0.5,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "notice_period_policy.txt",
+            "leave_policy.txt",
+            "maternity_paternity_policy.txt",
+            "exit_process_policy.txt",
+            "holidays_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 15,
+        "query": "Can someone who has just joined the company request remote working?",
+        "relevant_sources": [
+          "probation_policy.txt",
+          "work_from_home_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "work_from_home_policy.txt",
+            "code_of_conduct_policy.txt",
+            "exit_process_policy.txt",
+            "reimbursement_policy.txt",
+            "notice_period_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 0.5,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "probation_policy.txt",
+            "work_from_home_policy.txt",
+            "code_of_conduct_policy.txt",
+            "leave_policy.txt",
+            "reimbursement_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 16,
+        "query": "What happens if I spend money on a professional certification related to my job?",
+        "relevant_sources": [
+          "reimbursement_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "reimbursement_policy.txt",
+            "q3_revenue_report.pdf",
+            "supply_chain_playbook.docx",
+            "maternity_paternity_policy.txt",
+            "travel_expense_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "reimbursement_policy.txt",
+            "exit_process_policy.txt",
+            "code_of_conduct_policy.txt",
+            "q3_revenue_report.pdf",
+            "maternity_paternity_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 17,
+        "query": "If I am asked to work on a declared holiday, will I receive another day off?",
+        "relevant_sources": [
+          "holidays_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "holidays_policy.txt",
+            "leave_policy.txt",
+            "work_from_home_policy.txt",
+            "exit_process_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "holidays_policy.txt",
+            "leave_policy.txt",
+            "work_from_home_policy.txt",
+            "exit_process_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 18,
+        "query": "What happens to my company system access when I leave?",
+        "relevant_sources": [
+          "exit_process_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "exit_process_policy.txt",
+            "code_of_conduct_policy.txt",
+            "holidays_policy.txt",
+            "leave_policy.txt",
+            "warehouse_ops_overview.pdf"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "exit_process_policy.txt",
+            "code_of_conduct_policy.txt",
+            "leave_policy.txt",
+            "holidays_policy.txt",
+            "maternity_paternity_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 19,
+        "query": "I am on probation and my manager says my performance is inconclusive. Can the company extend my probation, and for how long?",
+        "relevant_sources": [
+          "probation_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "probation_policy.txt",
+            "notice_period_policy.txt",
+            "work_from_home_policy.txt",
+            "maternity_paternity_policy.txt",
+            "leave_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "probation_policy.txt",
+            "notice_period_policy.txt",
+            "maternity_paternity_policy.txt",
+            "work_from_home_policy.txt",
+            "leave_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 20,
+        "query": "I am planning annual leave, but one of those days is a declared public holiday. Will that day be deducted from my leave balance?",
+        "relevant_sources": [
+          "leave_policy.txt",
+          "holidays_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "holidays_policy.txt",
+            "leave_policy.txt",
+            "maternity_paternity_policy.txt",
+            "notice_period_policy.txt",
+            "sales_pipeline_overview.pptx"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "holidays_policy.txt",
+            "leave_policy.txt",
+            "maternity_paternity_policy.txt",
+            "notice_period_policy.txt",
+            "sales_pipeline_overview.pptx"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 21,
+        "query": "I have completed probation and want to work remotely three days every week. Is that allowed under the standard arrangement?",
+        "relevant_sources": [
+          "work_from_home_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "work_from_home_policy.txt",
+            "probation_policy.txt",
+            "exit_process_policy.txt",
+            "notice_period_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "work_from_home_policy.txt",
+            "probation_policy.txt",
+            "notice_period_policy.txt",
+            "exit_process_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.2,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 22,
+        "query": "I am resigning and have 10 days remaining before my last working day. Can I use my annual leave balance during this period?",
+        "relevant_sources": [
+          "leave_policy.txt",
+          "notice_period_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "holidays_policy.txt",
+            "notice_period_policy.txt",
+            "leave_policy.txt",
+            "exit_process_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 0.5,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "leave_policy.txt",
+            "notice_period_policy.txt",
+            "exit_process_policy.txt",
+            "holidays_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 23,
+        "query": "I returned from an approved business trip 12 days ago. Can I still submit my travel taxi and hotel expenses?",
+        "relevant_sources": [
+          "travel_expense_policy.txt",
+          "reimbursement_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "travel_expense_policy.txt",
+            "reimbursement_policy.txt",
+            "exit_process_policy.txt",
+            "leave_policy.txt",
+            "q3_revenue_report.pdf"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "travel_expense_policy.txt",
+            "reimbursement_policy.txt",
+            "exit_process_policy.txt",
+            "q3_revenue_report.pdf",
+            "leave_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 24,
+        "query": "I am on probation and become eligible for maternity leave during this period. Will my probation continue running while I am away?",
+        "relevant_sources": [
+          "maternity_paternity_policy.txt",
+          "probation_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "maternity_paternity_policy.txt",
+            "probation_policy.txt",
+            "work_from_home_policy.txt",
+            "leave_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "maternity_paternity_policy.txt",
+            "probation_policy.txt",
+            "work_from_home_policy.txt",
+            "leave_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 25,
+        "query": "I am resigning. What are my notice period, handover and exit formalities?",
+        "relevant_sources": [
+          "notice_period_policy.txt",
+          "exit_process_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "exit_process_policy.txt",
+            "notice_period_policy.txt",
+            "maternity_paternity_policy.txt",
+            "leave_policy.txt",
+            "probation_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "exit_process_policy.txt",
+            "notice_period_policy.txt",
+            "probation_policy.txt",
+            "leave_policy.txt",
+            "maternity_paternity_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 26,
+        "query": "I am a confirmed employee working remotely. What financial support is available for my home office and monthly internet expenses?",
+        "relevant_sources": [
+          "work_from_home_policy.txt",
+          "reimbursement_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "reimbursement_policy.txt",
+            "work_from_home_policy.txt",
+            "holidays_policy.txt",
+            "code_of_conduct_policy.txt",
+            "probation_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "reimbursement_policy.txt",
+            "work_from_home_policy.txt",
+            "probation_policy.txt",
+            "holidays_policy.txt",
+            "code_of_conduct_policy.txt"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      },
+      {
+        "question_id": 27,
+        "query": "I am travelling internationally for work. What approvals do I need, and what is the deadline for submitting the expenses?",
+        "relevant_sources": [
+          "travel_expense_policy.txt",
+          "reimbursement_policy.txt"
+        ],
+        "before_reranking": {
+          "ranked_sources": [
+            "travel_expense_policy.txt",
+            "leave_policy.txt",
+            "reimbursement_policy.txt",
+            "q3_revenue_report.pdf",
+            "expense_budget_overview.docx"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        },
+        "after_reranking": {
+          "ranked_sources": [
+            "travel_expense_policy.txt",
+            "reimbursement_policy.txt",
+            "expense_budget_overview.docx",
+            "leave_policy.txt",
+            "q3_revenue_report.pdf"
+          ],
+          "metrics": {
+            "recall@5": 1.0,
+            "precision@5": 0.4,
+            "mrr": 1.0,
+            "hit_rate@5": 1
+          }
+        }
+      }
+    ]
+  }
+]

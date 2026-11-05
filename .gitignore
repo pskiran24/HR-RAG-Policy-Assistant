@@ -1,0 +1,63 @@
+@'
+# ==============================
+# Secrets and credentials
+# ==============================
+.env
+.env.*
+!.env.example
+
+.streamlit/secrets.toml
+.streamlit/secrets.toml.*
+
+deploy.env.yaml
+*.pem
+*.key
+credentials.json
+service-account*.json
+
+# ==============================
+# Python cache and artifacts
+# ==============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# ==============================
+# Virtual environments
+# ==============================
+.venv/
+venv/
+env/
+hrrenv/
+hrenv/
+genenv/
+.venv_eval/
+
+# ==============================
+# Logs and temporary files
+# ==============================
+*.log
+*.tmp
+*.bak
+*.swp
+
+# ==============================
+# IDE and operating system
+# ==============================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ==============================
+# Local development
+# ==============================
+.streamlit/config.local.toml
+'@ | Set-Content -Path .gitignore -Encoding utf8
+!.streamlit/secrets.toml.example
